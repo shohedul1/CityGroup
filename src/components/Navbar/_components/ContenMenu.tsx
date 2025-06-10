@@ -17,7 +17,7 @@ const ContenMenu: React.FC<ContenMenuProps> = ({ options, title }) => {
          {
             title === "KNOW US" && (
 
-               <div className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-70 ">
+               <div data-aos="zoom-in" className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-70 ">
                   <div className="flex items-center justify-center">
                      <ul className="grid grid-cols-7 w-full">
                         {options.map((option, index) => (
@@ -40,7 +40,7 @@ const ContenMenu: React.FC<ContenMenuProps> = ({ options, title }) => {
          {
             title === "Brands" && (
 
-               <div className="w-[1000px] border absolute px-20 py-5 overflow-hidden bg-white border-red-300 rounded-4xl -left-95 ">
+               <div data-aos="fade-down" className="w-[1000px] border absolute px-20 py-5 overflow-hidden bg-white border-red-300 rounded-4xl -left-95 ">
                   <div className="flex items-center justify-center">
                      <ul className="grid grid-cols-6 gap-10 w-full">
 
@@ -72,8 +72,31 @@ const ContenMenu: React.FC<ContenMenuProps> = ({ options, title }) => {
          {
             title === "Foreign Trade" && (
 
-               <div className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-117 ">
+               <div data-aos="fade-right" className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-117 ">
                   <div className="flex items-center justify-center gap-5">
+                     {options.map((option, index) => (
+                        <Link href={option.href} key={index}>
+                           <div className="cursor-pointer flex flex-col hover:bg-red-200 p-2  rounded">
+                              <div className="flex flex-col items-center justify-center gap-4">
+                                 <div>{option.label}</div>
+                                 <div>{option.emoji}</div>
+                              </div>
+                           </div>
+
+                        </Link>
+                     ))}
+
+                  </div>
+               </div>
+            )
+         }
+
+         {
+            title === "Media" && (
+
+               <div data-aos="fade-left" className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-153.5 ">
+                  <div className="flex items-center justify-center">
+                     <ul className="grid grid-cols-7 w-full">
                         {options.map((option, index) => (
                            <Link href={option.href} key={index}>
                               <div className="cursor-pointer flex flex-col hover:bg-red-200 p-2  rounded">
@@ -86,10 +109,60 @@ const ContenMenu: React.FC<ContenMenuProps> = ({ options, title }) => {
                            </Link>
                         ))}
 
+                     </ul>
                   </div>
                </div>
             )
          }
+         {
+            title === "Career" && (
+
+               <div  data-aos="flip-down" className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-172.5 ">
+                  <div className="flex items-center justify-center">
+                     <ul className="grid grid-cols-7 w-full">
+                        {options.map((option, index) => (
+                           <Link href={option.href} key={index}>
+                              <div className="cursor-pointer flex flex-col hover:bg-red-200 p-2  rounded">
+                                 <div className="flex flex-col items-center justify-center gap-4">
+                                    <div>{option.label}</div>
+                                    <div>{option.emoji}</div>
+                                 </div>
+                              </div>
+
+                           </Link>
+                        ))}
+
+                     </ul>
+                  </div>
+               </div>
+            )
+         }
+         {
+            title === "Contact Us" && (
+
+               <div data-aos="zoom-in-up" className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-193.5 ">
+                  <div className="flex items-center justify-center">
+                     <ul className="grid grid-cols-7 w-full">
+                        {options.map((option, index) => (
+                           <Link href={option.href} key={index}>
+                              <div className="cursor-pointer flex flex-col hover:bg-red-200 p-2  rounded">
+                                 <div className="flex flex-col items-center justify-center gap-4">
+                                    <div>{option.label}</div>
+                                    <div>{option.emoji}</div>
+                                 </div>
+                              </div>
+
+                           </Link>
+                        ))}
+
+                     </ul>
+                  </div>
+               </div>
+            )
+         }
+
+
+
 
 
 
