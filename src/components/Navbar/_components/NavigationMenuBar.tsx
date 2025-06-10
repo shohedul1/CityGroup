@@ -5,34 +5,18 @@
 'use client';
 import {
     AlignJustify,
-    BarChart,
-    Building,
-    Building2,
-    Camera,
-    ChevronDown,
-    Code,
-    Code2Icon,
     Cog,
-    DollarSign,
     Download,
     Dribbble,
     FileChartColumnIncreasing,
     GitFork,
-    GraduationCap,
-    Headphones,
-    Home,
+   
     Info,
-    LibrarySquare,
+    
     LifeBuoy,
-    Lock,
+    
     Network,
-    Newspaper,
-    PaintBucket,
-    Settings,
-    Smile,
-    Sparkles,
-    UserCircle2,
-    UserPlus
+    
 
 } from "lucide-react";
 import React, { useState } from "react";
