@@ -10,13 +10,13 @@ import {
     Dribbble,
     FileChartColumnIncreasing,
     GitFork,
-   
+
     Info,
-    
+
     LifeBuoy,
-    
+
     Network,
-    
+
 
 } from "lucide-react";
 import React, { useState } from "react";
@@ -53,13 +53,34 @@ const items: MenuItem[] = [
         title: 'Brands',
         menu: "brands",
         options: [
-            { url: '/product/tree.png', href: "/" },
-            { url: '/product/bengol.png', href: "/" },
-            { url: '/product/sun.png', href: "/" },
-            { url: '/product/Jibon.png', href: "/" },
-            { url: '/product/Natuarel.png', href: "/" },
-            { url: '/product/quily.png', href: "/" },
-            { url: '/product/candy.png', href: "/" },
+            {
+                url: 'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/tree_xqofzz.png',
+                href: "/"
+            },
+            {
+                url: 'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572650/bengol_upsub8.png',
+                href: "/"
+            },
+            {
+                url: 'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/trie_xsiu8f.png',
+                href: "/"
+            },
+            {
+                url: 'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572650/Jibon_gwbs67.png',
+                href: "/"
+            },
+            {
+                url: 'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/Natuarel_xmc8cu.png',
+                href: "/"
+            },
+            {
+                url: 'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/quily_gveg22.png',
+                href: "/"
+            },
+            {
+                url: 'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572648/candy_btwho4.png',
+                href: "/"
+            },
 
 
 

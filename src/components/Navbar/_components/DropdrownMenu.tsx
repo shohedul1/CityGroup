@@ -21,9 +21,23 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
         onClose();
     }
 
+    // const brands = [
+    //     "tree.png", "bengol.png", "Natuarel.png", "Jibon.png", "sun.png", "quily.png", "candy.png"
+    // ];
     const brands = [
-        "tree.png", "bengol.png", "Natuarel.png", "Jibon.png", "sun.png", "quily.png", "candy.png"
-    ];
+
+        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/tree_xqofzz.png',
+        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572650/bengol_upsub8.png',
+        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/trie_xsiu8f.png',
+        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572650/Jibon_gwbs67.png',
+        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/Natuarel_xmc8cu.png',
+        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/quily_gveg22.png',
+        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572648/candy_btwho4.png',
+
+
+
+
+    ]
     const knowUsLinks = [
         { label: 'About us', href: '/team-alignment' },
         { label: 'History', href: '/team-alignment' },
@@ -64,7 +78,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                             <AccordionItem key={i} value={i.toString()}>
                                 <Link href="/team-alignment" onClick={handleLinkClick}>
                                     <Image
-                                        src={`/product/${img}`}
+                                        src={img}
                                         alt="brand logo"
                                         width={105}
                                         height={30}

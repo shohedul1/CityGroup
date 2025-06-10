@@ -19,11 +19,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/logo/city_logo.png",
-        sizes: "50*50",
-        type: "image/jpeg",
+        url: "https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/Adobe_Express_-_file_lhe4lp.png",
       },
-    ],
+    ]
+
   },
 };
 
