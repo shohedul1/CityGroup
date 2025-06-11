@@ -1,7 +1,3 @@
-
-
-
-
 'use client';
 import {
     AlignJustify,
@@ -10,14 +6,9 @@ import {
     Dribbble,
     FileChartColumnIncreasing,
     GitFork,
-
     Info,
-
     LifeBuoy,
-
     Network,
-
-
 } from "lucide-react";
 import React, { useState } from "react";
 import ContenMenu from "./ContenMenu";
@@ -105,9 +96,10 @@ const items: MenuItem[] = [
         title: 'Media',
         menu: "media",
         options: [
-            { label: "About Us", emoji: <Info className="text-orange-500" />, href: '/about-us' },
-            { label: "Careers", emoji: <LifeBuoy className="text-green-500" />, href: '/careers' },
-            { label: "Newsroom", emoji: <Download className="text-indigo-500" />, href: '/newsroom' },
+            { label: "News & events", emoji: <Info className="text-orange-500" />, href: '/about-us' },
+            { label: "commercials", emoji: <LifeBuoy className="text-green-500" />, href: '/careers' },
+            { label: "press releases", emoji: <Download className="text-indigo-500" />, href: '/newsroom' },
+            { label: "INVESTORINFORMATION", emoji: <Download className="text-indigo-500" />, href: '/newsroom' },
         ],
     },
     {
@@ -173,7 +165,7 @@ const NavigationMenuBar = () => {
     }
 
     return (
-        <div className="hidden text-md font-light space-x-4 w-full items-center xl:flex">
+        <div className="hidden  text-md font-light space-x-4 w-full items-center xl:flex">
             {
                 items.map((item, index) => (
                     <React.Fragment key={index}>

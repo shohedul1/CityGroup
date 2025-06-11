@@ -73,11 +73,11 @@ const ContenMenu: React.FC<ContenMenuProps> = ({ options, title }) => {
             title === "Foreign Trade" && (
 
                <div data-aos="fade-right" className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-117 ">
-                  <div className="flex items-center justify-center gap-5">
+                  <div className="flex items-center justify-center gap-20">
                      {options.map((option, index) => (
                         <Link href={option.href} key={index}>
                            <div className="cursor-pointer flex flex-col hover:bg-red-200 p-2  rounded">
-                              <div className="flex flex-col items-center justify-center gap-4">
+                              <div className="flex flex-col items-center justify-center ">
                                  <div>{option.label}</div>
                                  <div>{option.emoji}</div>
                               </div>

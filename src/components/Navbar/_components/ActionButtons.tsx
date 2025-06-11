@@ -40,7 +40,7 @@ const ActionButtons = () => {
 
 
             <div
-                className={`fixed top-[70px] left-0 w-full  bg-white z-40 transition-all duration-500 ease-in-out shadow-md ${isDropdownVisible
+                className={`fixed top-[60px] left-0 w-full  bg-white z-40 transition-all duration-500 ease-in-out shadow-md ${isDropdownVisible
                     ? 'opacity-100 translate-y-0 pointer-events-auto'
                     : 'opacity-0 -translate-y-5 pointer-events-none'
                     }`}
