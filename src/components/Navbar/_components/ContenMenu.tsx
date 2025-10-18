@@ -114,53 +114,8 @@ const ContenMenu: React.FC<ContenMenuProps> = ({ options, title }) => {
                </div>
             )
          }
-         {
-            title === "Career" && (
-
-               <div  data-aos="flip-down" className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-172.5 ">
-                  <div className="flex items-center justify-center">
-                     <ul className="grid grid-cols-7 w-full">
-                        {options.map((option, index) => (
-                           <Link href={option.href} key={index}>
-                              <div className="cursor-pointer flex flex-col hover:bg-red-200 p-2  rounded">
-                                 <div className="flex flex-col items-center justify-center gap-4">
-                                    <div>{option.label}</div>
-                                    <div>{option.emoji}</div>
-                                 </div>
-                              </div>
-
-                           </Link>
-                        ))}
-
-                     </ul>
-                  </div>
-               </div>
-            )
-         }
-         {
-            title === "Contact Us" && (
-
-               <div data-aos="zoom-in-up" className="w-[1000px] border absolute overflow-hidden bg-white border-red-300 rounded-4xl -left-193.5 ">
-                  <div className="flex items-center justify-center">
-                     <ul className="grid grid-cols-7 w-full">
-                        {options.map((option, index) => (
-                           <Link href={option.href} key={index}>
-                              <div className="cursor-pointer flex flex-col hover:bg-red-200 p-2  rounded">
-                                 <div className="flex flex-col items-center justify-center gap-4">
-                                    <div>{option.label}</div>
-                                    <div>{option.emoji}</div>
-                                 </div>
-                              </div>
-
-                           </Link>
-                        ))}
-
-                     </ul>
-                  </div>
-               </div>
-            )
-         }
-
+         
+         
 
 
 

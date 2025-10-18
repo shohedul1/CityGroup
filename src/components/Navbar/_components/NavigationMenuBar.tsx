@@ -13,6 +13,7 @@ import {
 import React, { useState } from "react";
 import ContenMenu from "./ContenMenu";
 import { PiGlobeStandThin, PiShootingStar } from "react-icons/pi";
+import Link from "next/link";
 
 interface MenuItem {
     title: string,
@@ -103,7 +104,7 @@ const items: MenuItem[] = [
         ],
     },
     {
-        title: 'Career',
+        title: 'career',
         menu: "career",
         options: [
             { label: "About Us", emoji: <Info className="text-orange-500" />, href: '/about-us' },
@@ -141,7 +142,36 @@ const NavigationMenuBar = () => {
                 onMouseEnter={() => handleMouseEnter(menu)}
                 onMouseLeave={handleMouseLeave}>
                 <div className="flex items-center gap-3  ">
-                    <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+
+                    {/* <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div> */}
+                    {title === "KNOW US" && (
+                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+
+                    )}
+                    {title === "Brands" && (
+                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+
+                    )}
+                    {title === "Foreign Trade" && (
+                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+
+                    )}
+                    {title === "Media" && (
+                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+
+                    )}
+                    {title === "career" && (
+                        <Link href="/">
+                            <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+                        </Link>
+
+                    )}
+                    {title === "Contact Us" && (
+                        <Link href="/">
+                            <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+                        </Link>
+
+                    )}
                     <div className="mt-20">
                         {activeMenu === menu && (
                             <ContenMenu

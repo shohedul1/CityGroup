@@ -13,7 +13,7 @@ const ActionButtons = () => {
     return (
         <div className="flex items-center justify-center gap-5 relative z-50">
 
-            <div className="hidden md:hidden lg:flex xl:flex relative">
+            <div className="hidden md:flex xl:flex lg:flex relative">
                 <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#565add]">
                     <Search className="w-5 h-5" />
                 </span>
@@ -27,7 +27,7 @@ const ActionButtons = () => {
             {/* Mobile Menu Toggle */}
             <div
                 onClick={toggleDropdown}
-                className="bg-[#eff0ff] p-3 rounded-full xl:hidden z-50 cursor-pointer"
+                className="bg-[#eff0ff] p-3 rounded-full md:hidden lg:hidden xl:hidden z-50 cursor-pointer"
             >
                 {isDropdownVisible ? (
                     <X className="w-6 h-6 transition-all duration-500 ease-in-out text-[#565add]" />

@@ -21,39 +21,34 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
         onClose();
     }
 
-    // const brands = [
-    //     "tree.png", "bengol.png", "Natuarel.png", "Jibon.png", "sun.png", "quily.png", "candy.png"
-    // ];
     const brands = [
 
         'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/tree_xqofzz.png',
         'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572650/bengol_upsub8.png',
-        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/trie_xsiu8f.png',
         'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572650/Jibon_gwbs67.png',
+
         'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/Natuarel_xmc8cu.png',
+        'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/trie_xsiu8f.png',
         'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572649/quily_gveg22.png',
         'https://res.cloudinary.com/djhjt07rh/image/upload/v1749572648/candy_btwho4.png',
 
-
-
-
     ]
     const knowUsLinks = [
-        { label: 'About us', href: '/team-alignment' },
-        { label: 'History', href: '/team-alignment' },
-        { label: 'Sister Concerns', href: '/team-alignment' },
-        { label: 'Management', href: '/team-alignment' },
-        { label: 'Achievements', href: '/team-alignment' },
-        { label: 'csr', href: '/team-alignment' },
-        { label: 'sustainability', href: '/team-alignment' },
+        { label: 'ABOUT US', href: '/team-alignment' },
+        { label: 'history hISTORY', href: '/team-alignment' },
+        { label: 'SISTER CONCERNS CONCERNS', href: '/team-alignment' },
+        { label: 'MANAGEMENT', href: '/team-alignment' },
+        { label: 'ACHIEVEMENTS', href: '/achievement' },
+        { label: 'CSR', href: '/csr' },
+        { label: ' SUSTAINABILITY', href: '/sustainability' },
 
     ];
 
     return (
-        <div className="w-full h-full px-5 relative  white  justify-center items-center  xl:hidden ">
+        <div className="w-full h-full px-5 py-2  relative  white  justify-center items-center md:hidden  ">
             <Accordion type="single" collapsible  >
                 <AccordionItem value="item-1">
-                    <AccordionTrigger className="uppercase text-[#0083cb]">know us</AccordionTrigger>
+                    <AccordionTrigger className=" lowercase text-[#0083cb]">know us</AccordionTrigger>
                     <AccordionContent>
                         {knowUsLinks.map((item, i) => (
                             <AccordionItem key={i} value={i.toString()}>
@@ -63,7 +58,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                                     onClick={handleLinkClick}
                                     className="flex pl-4 w-full text-[#0083cb] rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 >
-                                    <div className="uppercase">{item.label}</div>
+                                    <div className=" lowercase">{item.label}</div>
 
                                 </Link>
                             </AccordionItem>
@@ -96,7 +91,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                     <AccordionContent>
                         <AccordionItem value="1">
                             <Link
-                                href={'/team-alignment'}
+                                href={'/achievement'}
                                 className="flex pl-4 w-full text-[#0083cb] rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 onClick={handleLinkClick}
                             >
@@ -105,7 +100,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                         </AccordionItem>
                         <AccordionItem value="2">
                             <Link
-                                href={'/team-alignment'}
+                                href={'/achievement'}
                                 className="flex text-[#0083cb] pl-4 w-full rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 onClick={handleLinkClick}
                             >
@@ -115,7 +110,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                         </AccordionItem>
                         <AccordionItem value="3">
                             <Link
-                                href={'/team-alignment'}
+                                href={'/achievement'}
                                 className="flex text-[#0083cb] pl-4 w-full rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 onClick={handleLinkClick}
                             >
@@ -125,7 +120,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                         </AccordionItem>
                         <AccordionItem value="4">
                             <Link
-                                href={'/team-alignment'}
+                                href={'/achievement'}
                                 className="flex text-[#0083cb] pl-4 w-full rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 onClick={handleLinkClick}
                             >
@@ -149,10 +144,8 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
 
 
 
+
             </Accordion >
-
-
-
         </div >
 
     )
