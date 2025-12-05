@@ -48,7 +48,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
         <div className="w-full h-full px-5 py-2  relative  white  justify-center items-center md:hidden  ">
             <Accordion type="single" collapsible  >
                 <AccordionItem value="item-1">
-                    <AccordionTrigger className=" lowercase text-[#0083cb]">know us</AccordionTrigger>
+                    <AccordionTrigger className=" uppercase text-[#0083cb]  font-normal">know us</AccordionTrigger>
                     <AccordionContent>
                         {knowUsLinks.map((item, i) => (
                             <AccordionItem key={i} value={i.toString()}>
@@ -58,7 +58,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                                     onClick={handleLinkClick}
                                     className="flex pl-4 w-full text-[#0083cb] rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 >
-                                    <div className=" lowercase">{item.label}</div>
+                                    <div className="uppercase text-[#0083cb]">{item.label}</div>
 
                                 </Link>
                             </AccordionItem>
@@ -67,7 +67,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                    <AccordionTrigger className="uppercase text-[#0083cb]">brands</AccordionTrigger>
+                    <AccordionTrigger className="uppercase text-[#0083cb] font-normal  ">brands</AccordionTrigger>
                     <AccordionContent className="flex flex-col border-t ">
                         {brands.map((img, i) => (
                             <AccordionItem key={i} value={i.toString()} className="flex w-full items-center     relative overflow-hidden ">
@@ -87,7 +87,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
 
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                    <AccordionTrigger className="uppercase text-[#0083cb]">MEDIA</AccordionTrigger>
+                    <AccordionTrigger className="uppercase text-[#0083cb] font-normal">MEDIA</AccordionTrigger>
                     <AccordionContent>
                         <AccordionItem value="1">
                             <Link
@@ -95,7 +95,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                                 className="flex pl-4 w-full text-[#0083cb] rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 onClick={handleLinkClick}
                             >
-                                <div className="uppercase">News & Events</div>
+                                <div className="uppercase text-[#0083cb]">News & Events</div>
                             </Link>
                         </AccordionItem>
                         <AccordionItem value="2">
@@ -104,7 +104,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                                 className="flex text-[#0083cb] pl-4 w-full rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 onClick={handleLinkClick}
                             >
-                                <div className="uppercase">Commercials</div>
+                                <div className="uppercase text-[#0083cb]">Commercials</div>
 
                             </Link>
                         </AccordionItem>
@@ -114,7 +114,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                                 className="flex text-[#0083cb] pl-4 w-full rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 onClick={handleLinkClick}
                             >
-                                <div className="uppercase">Press Releases</div>
+                                <div className="uppercase text-[#0083cb]">Press Releases</div>
 
                             </Link>
                         </AccordionItem>
@@ -124,7 +124,7 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                                 className="flex text-[#0083cb] pl-4 w-full rounded-full items-center hover:text-lime-500 h-10 hover:bg-slate-200"
                                 onClick={handleLinkClick}
                             >
-                                <div className="uppercase">Investor Information</div>
+                                <div className="uppercase text-[#0083cb]">Investor Information</div>
 
                             </Link>
                         </AccordionItem>
@@ -134,10 +134,10 @@ const DropdrownMenu: React.FC<DropDrownMenuProps> = ({ onClose }) => {
                     </AccordionContent>
                 </AccordionItem>
                 <div className="flex   flex-col">
-                    <Link href={"/"} className="flex text-[#0083cb] items-center  py-3 border-b ">
+                    <Link href={"/"} className="flex  items-center  py-3 border-b uppercase text-[#0083cb] ">
                         CAREER
                     </Link>
-                    <Link href={"/"} className="flex text-[#0083cb] items-center  py-3 border-b">
+                    <Link href={"/"} className="flex uppercase text-[#0083cb] items-center  py-3 ">
                         CONTACT US
                     </Link>
                 </div>

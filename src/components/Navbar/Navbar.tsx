@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className='-translate-y-1'>
                 <Logo />
             </div>
-            <div className='flex items-center flex-row justify-center gap-5 -translate-y-1  '>
+            <div className='flex items-center flex-row justify-center gap-5 lg:-translate-y-1 '>
                 <NavigationMenuBar />
                 <ActionButtons />
             </div>
