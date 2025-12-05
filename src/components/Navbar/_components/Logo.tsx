@@ -12,7 +12,7 @@ const Logo = () => {
                     width={500}
                     height={500}
                     // style={{ width: "auto", height: "auto" }} // Adjusted style
-                    className='lg:w-[249px] lg:h-[64px] w-[150px] h-[50px]  object-contain'
+                    className='lg:w-[247px] lg:h-[64px]  w-[150px] h-[50px]  object-contain'
                     property="true"
                     priority
 

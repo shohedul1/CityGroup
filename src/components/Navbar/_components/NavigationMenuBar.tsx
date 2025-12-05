@@ -106,20 +106,12 @@ const items: MenuItem[] = [
     {
         title: 'career',
         menu: "career",
-        options: [
-            { label: "About Us", emoji: <Info className="text-orange-500" />, href: '/about-us' },
-            { label: "Careers", emoji: <LifeBuoy className="text-green-500" />, href: '/careers' },
-            { label: "Newsroom", emoji: <Download className="text-indigo-500" />, href: '/newsroom' },
-        ],
+        options: []
     },
     {
         title: 'Contact Us',
         menu: "Contact-us",
-        options: [
-            { label: "About Us", emoji: <Info className="text-orange-500" />, href: '/about-us' },
-            { label: "Careers", emoji: <LifeBuoy className="text-green-500" />, href: '/careers' },
-            { label: "Newsroom", emoji: <Download className="text-indigo-500" />, href: '/newsroom' },
-        ],
+        options: [],
     }
 ]
 
@@ -141,34 +133,34 @@ const NavigationMenuBar = () => {
             <div className="flex items-center relative"
                 onMouseEnter={() => handleMouseEnter(menu)}
                 onMouseLeave={handleMouseLeave}>
-                <div className="flex items-center gap-3  ">
+                <div className="flex items-center gap-5">
 
                     {/* <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div> */}
                     {title === "KNOW US" && (
-                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+                        <div className="uppercase hover:text-[#273896] text-[#0083cb] lg:text-sm xl:text-base font-normal mt-2 ">{title}</div>
 
                     )}
                     {title === "Brands" && (
-                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 text-sm ">{title}</div>
 
                     )}
                     {title === "Foreign Trade" && (
-                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 text-sm ">{title}</div>
 
                     )}
                     {title === "Media" && (
-                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+                        <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 text-sm">{title}</div>
 
                     )}
                     {title === "career" && (
-                        <Link href="/">
-                            <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+                        <Link href="/career">
+                            <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 text-sm">{title}</div>
                         </Link>
 
                     )}
                     {title === "Contact Us" && (
                         <Link href="/">
-                            <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 ">{title}</div>
+                            <div className="uppercase hover:text-[#273896] text-[#0083cb] font-normal mt-2 text-sm">{title}</div>
                         </Link>
 
                     )}
@@ -195,12 +187,13 @@ const NavigationMenuBar = () => {
     }
 
     return (
-        <div className="hidden  text-md font-light space-x-4 w-full items-center xl:flex">
+        <div className="hidden  font-light space-x-4 w-full items-center lg:flex">
             {
                 items.map((item, index) => (
                     <React.Fragment key={index}>
-                        <div className="cursor-pointer hidden xl:block">
+                        <div className="cursor-pointer hidden lg:block">
                             {rendrMenu(item)}
+                            
                         </div>
                     </React.Fragment>
                 ))
